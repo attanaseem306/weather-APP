@@ -1,0 +1,54 @@
+body
+{
+    background-image: linear-gradient(to right , #f2994a, #48b1bf);
+}
+#main{
+    
+    background-color: #4b8d93;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    height: 500px;
+    border-radius: 30px;
+    padding-top: 30px;
+}
+#main1{
+    display: flex;
+    justify-content: center;
+    
+}
+input{
+    border-radius: 10px;
+
+    outline: none;
+    padding:5px;
+    width: 300px;
+
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+ #item{
+    background-color: rgb(251, 251, 250);
+    width: 700px;
+    padding-top: 20px;
+    
+
+} 
+#pic{
+    width: 150px;
+}
+ #heading2, #heading3,#heading, #heading4,#second1{
+font-size:18px ;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: bold;
+    }
+ 
+.first{
+    align-items: center;
+}
