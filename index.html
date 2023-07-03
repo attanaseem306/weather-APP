@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./app.js"></script>
 </head>
 
 <body>
@@ -36,34 +37,7 @@
     </div>
 </div> 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script>
-    function weather() {
-      var cityName = document.getElementById("input").value;
-       
-      var APIKey = '021841d914d80fc618423e5c72280838';
-      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIKey}&units=metric`)
-        .then(function (response) {
-          console.log(response.data);
-          document.getElementById("heading3").innerHTML=`current  MIN-Temperature is ${response.data.main.temp_min}°C`
-          document.getElementById("heading2").innerHTML=`current  MAX-Temperature is ${response.data.main.temp_max}°C`
-          document.getElementById("heading").innerHTML=`current Temperature is ${response.data.main.temp}°C`
-          document.getElementById("heading4").innerHTML=`PLACE NAME : ${response.data.name}`
-          document.getElementById("heading5").innerHTML="DETAIL"
-          var check= document.getElementById("pic").src=`${response.data.weather[0].icon}`;
-          document.getElementById("pic").src=`https://openweathermap.org/img/wn/${check}@2x.png`;
-
-          /////////////////////////////second DIv
-          
-          document.getElementById("second1").innerHTML=`HUMIDITY IS : ${response.data.main.humidity}`
   
-        })
-        .catch(function (error) {
-          console.log(error);
-        })
-
-    }
-
-  </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
